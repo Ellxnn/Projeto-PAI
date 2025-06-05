@@ -90,8 +90,10 @@ body {
 }
 
 .avisos, .pacientes {
-  margin-top: 20px;
+  margin-top: 30px;
 }
+
+
 
 .caixa-aviso {
   background: #ddd;
@@ -120,7 +122,7 @@ body {
   background: transparent;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
 }
 
 .user-info {
@@ -145,7 +147,18 @@ body {
   color: #555;
 }
 
-.escala, .instagram {
+.escala {
+  padding-top: -20px
+}
+
+.escala {
+  background: #fff6f6;
+  padding: 5px 20px 15px 20px;
+  border-radius: 10px;
+}
+
+
+.instagram {
   background: #fff6f6;
   padding: 15px 20px;
   border-radius: 10px;
@@ -164,3 +177,127 @@ body {
   border-radius: 10px;
 }
 
+.bloco-escala{
+ display: flex;
+ flex-direction: column;
+ gap:10px;
+}
+
+
+.pesquisa-paciente {
+  background: #f9f7f7;
+  border-radius: 10px;
+  margin-top: 35px;
+  width: 100%;
+}
+
+.barra-vermelha {
+  background-color: #cc1b1e;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px 20px;
+}
+
+.barra-vermelha h3 {
+  padding-left: 10px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.conteudo-pesquisa {
+  padding: 20px;
+}
+
+.form-pesquisa {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.grupo-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.grupo-form label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.grupo-form select,
+.grupo-form input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 150px;
+}
+
+.flex-expand {
+  flex: 1;
+}
+
+.flex-expand input {
+  width: 100%;
+}
+
+.btn-wrapper {
+  margin-left: auto;
+}
+
+.btn-wrapper button {
+  padding: 8px 20px;
+  background-color: #cc1b1e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+.resultado-pesquisa {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.tabela-pacientes {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+}
+
+.tabela-pacientes thead {
+  background-color: #f0e9ea;
+}
+
+.tabela-pacientes th {
+  text-align: left;
+  padding: 12px 10px;
+  color: #333;
+}
+
+.tabela-pacientes td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabela-pacientes a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.tabela-pacientes a:hover {
+  text-decoration: underline;
+  color: #c00;
+}
