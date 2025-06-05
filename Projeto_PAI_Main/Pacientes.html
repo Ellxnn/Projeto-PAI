@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAI - Pronto Atendimento Institucional</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="imagens/pai_logo.png" class="logo-pai" alt="PAI Logo">
+      </div>
+      <a href="../Projeto_PAI_Formulario/00.Queixas2.html">
+        <button class="btn-novo">+ Novo Prontuário</button>
+      </a>
+      <nav class="menu">
+        <a href="Inicial.html"><img src="imagens/home_icone.png" class="icone-home" alt="Início"> Início</a>
+        <a href="Pacientes.html"><img src="imagens/paciente_icone.png" class="icone-paciente" alt="Pacientes"> Pacientes</a>
+        <a href="#"><img src="imagens/alinhamentos.png" class="icone-alinhamentos" alt="Alinhamentos"> Alinhamentos</a>
+        <a href="#"><img src="imagens/calendario_icone.png" class="icone-calendario" alt="Escala"> Escala</a>
+        <a href="#"><img src="imagens/engrenagem.png" class="icone-engrenagem" alt="Configurações"> Configurações</a>
+        <a href="#"><img src="imagens/sair_icone.png" class="icone-sair" alt="Sair"> Sair</a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <div class="top-bar">
+        <input type="text" placeholder="Pesquisar">
+      </div>
+
+    
+      <div class="pesquisa-paciente">
+  <div class="barra-vermelha">
+    <h3>Buscar Paciente</h3>
+  </div>
+  <div class="conteudo-pesquisa">
+    <form class="form-pesquisa">
+      <div class="grupo-form">
+        <label for="tipo">Tipo</label>
+        <select id="tipo" name="tipo">
+          <option value="vazio">Selecionar</option>
+          <option value="nome">Nome</option>
+          <option value="cpf">CPF</option>
+        </select>
+      </div>
+
+      <div class="grupo-form flex-expand">
+        <label for="dado">Dado</label>
+        <input type="text" id="dado" name="dado">
+      </div>
+
+      
+
+      <div class="btn-wrapper">
+        <button type="submit">Pesquisar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<div class="resultado-pesquisa">
+  <table class="tabela-pacientes">
+    <thead>
+      <tr>
+        <th>CPF</th>
+        <th>Nome</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>123456789-10</td>
+        <td><a href="#">Maria da Silva Pereira</a></td>
+      </tr>
+      <tr>
+        <td>123456789-10</td>
+        <td><a href="#">Angelo Marques de Souza</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+    </main>
+
+    <aside class="widgets">
+      <div class="user-info">
+        <img src="imagens/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_5247852.jpg" alt="Avatar">
+        <div class="perfil">
+          <strong>Maria Clara</strong>
+          <p>Plantonista</p>
+        </div>
+      </div>
+    <div class="bloco-escala">
+      <h4 class="titulo-escala">Escala do Dia</h4>
+      <div class="escala">
+        <p><strong>Plantonistas:</strong></p>
+        <p>08:00 - 12:00: Lucas, Camilly</p>
+        <p>12:00 - 16:00: Fernando, Maria Fernanda</p>
+        <p>16:00 - 20:00: Maria Clara, Luana</p>
+        <p><strong>Supervisor:</strong></p>
+        <p>08:00 - 18:00: Amanda Torres</p>
+      </div>
+    </div>
+
+      <div class="instagram">
+        <h4>Instagram</h4>
+        <img src="imagens/imagem-insta.png" alt="Campanha de Vacinação">
+      </div>
+    </aside>
+  </div>
+</body>
+</html>
