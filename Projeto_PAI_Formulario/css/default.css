@@ -156,37 +156,61 @@ body.pagina-login {
 /*DADOS PACIENTE */
 
 
-body.pagina-app .container-app {
-    display: flex;
-    min-height: 100%; 
+body.pagina-app {
+    display: flex;          /* Transforma o body em um container flex */
+    flex-direction: column; /* Organiza os filhos em coluna */
+    min-height: 100vh;      /* Garante que o body tenha a altura da tela */
 }
 
+body.pagina-app .container-app {
+    flex-grow: 1;       /* <<< ESSA É A REGRA MAIS IMPORTANTE */
+    display: flex;      /* Mantém o layout de colunas (sidebar + conteúdo) */
+}
+
+.cabecalho-global {
+    background-color: #fff;
+    padding: 15px 40px;
+    border-bottom: 1px solid var(--borda-cor);
+    flex-shrink: 0; /* Impede o cabeçalho de encolher */
+}
+
+.logo-global {
+    height: 40px; /* Altura da logo */
+}
+
+.container-app {
+    flex-grow: 1; 
+    display: flex;
+    overflow-y: hidden; /* Evita barras de rolagem duplas */
+}
 
 .pagina-app .barra-lateral {
-   
-    
+    width: var(--largura-barra-lateral); 
+    background-color: var(--cor-primaria);
     color: var(--texto-claro);
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     padding: 20px 0;
-    transition: width 0.3s ease;
 }
 
 .pagina-app .cabecalho-lateral {
-    padding: 0 20px 30px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:20px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .pagina-app .logo-lateral {
-    max-width: 200px;
+    max-width: 150px;
 }
 
 .pagina-app .menu-lateral {
-    background-color: var(--cor-primaria);
-    width: var(--largura-barra-lateral);
-    padding-top: 50px;
-    list-style: none;
+   list-style: none;
     flex-grow: 1;
+   
 }
 
 .pagina-app .menu-lateral li a {
@@ -209,7 +233,7 @@ body.pagina-app .container-app {
 
 .pagina-app .rodape-lateral {
     text-align: center;
-    padding-top: 60px;
+    padding: 20px 0;
 }
 
 .pagina-app .rodape-lateral a {
@@ -220,6 +244,7 @@ body.pagina-app .container-app {
 .pagina-app .conteudo-principal {
     flex-grow: 1;
     padding: 20px 40px;
+    overflow-y: auto;
 }
 
 .pagina-app .cabecalho-principal {
