@@ -4,12 +4,15 @@
 O projeto tem como o objetivo a criação de um sistema eletrônico para o PAI(Pronto Atendimento Institucional), visando modernizar e otimizar o processo de atendimento, garantindo maior eficiência, segurança e organização nos registros. Este projeto visa melhorar a qualidade do atendimento, facilitar o acesso às informações e promover uma gestão mais eficaz dos serviços de saúde dentro da universidade.
 
 ## Documentação
-Link para os documentos: [Protótipo do Projeto Pauta das Reuniões](https://docs.google.com/document/d/1brs21W-Ulmum2vwUS1kMsI_fDc20mn3v5z5bthJPKyo/edit?tab=t.0)
+Link para os documentos: [Protótipo do Projeto]
+(https://www.figma.com/design/dx51cpEj2O7xeN2tZEKiVI/PAI?m=auto&t=91QNPE6umRSI9Jsj-1)
 
 ## Linguagens utilizadas
 HTML:
 
 JavaScript:
+
+PHP:
 
 ## Ferramentas utilizadas
 Vscode:
@@ -28,7 +31,7 @@ Figma:
 
    senha: 1234
 
-Link para o site: [Projeto PAI](https://aranha1975.github.io/)
+Link para o site: [Projeto PAI](github.com/Ellxnn/Projeto-PAI.git)
 
 
 ## Problemas
@@ -48,12 +51,8 @@ Link para o site: [Projeto PAI](https://aranha1975.github.io/)
 
 
 ## Equipe:
-Nino Xavier Simas 
-
 Camilly Silva Venancio
 
 Ellen Nóbrega
-
-Marcio Aranha
 
 Lucas Fabricio
