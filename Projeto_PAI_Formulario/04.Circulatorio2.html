@@ -44,54 +44,54 @@
 
             <div class="container-formulario">
                 <h2>CIRCULATÓRIO</h2>
-                <form>
+                <form method="POST" action="salvar_circulatorio.php">
                     <fieldset class="grupo-fieldset">
                         <legend>Pulso</legend>
                         <div class="grupo-checkbox">
-                            <label class="item-checkbox"><input type="radio" name="pulso"> Regular</label>
-                            <label class="item-checkbox"><input type="radio" name="pulso"> Irregular</label>
-                            <label class="item-checkbox"><input type="radio" name="pulso"> Ausente</label>
-                            <label class="item-checkbox"><input type="radio" name="pulso"> Rítmico / Desrítmico</label>
+                            <label class="item-checkbox"><input type="radio" name="pulso" value="Regular"> Regular</label>
+                            <label class="item-checkbox"><input type="radio" name="pulso" value="Irregular"> Irregular</label>
+                            <label class="item-checkbox"><input type="radio" name="pulso" value="Ausente"> Ausente</label>
+                            <label class="item-checkbox"><input type="radio" name="pulso" value="Rítmico / Desrítmico"> Rítmico / Desrítmico</label>
                         </div>
                     </fieldset>
 
                     <fieldset class="grupo-fieldset">
                         <legend>Pele</legend>
                         <div class="grupo-checkbox">
-                            <label class="item-checkbox"><input type="radio" name="pele"> Isquemia</label>
-                            <label class="item-checkbox"><input type="radio" name="pele"> Pálida</label>
+                            <label class="item-checkbox"><input type="radio" name="pele" value="Isquemia"> Isquemia</label>
+                            <label class="item-checkbox"><input type="radio" name="pele" value="Pálida"> Pálida</label>
                             <div class="item-com-input-externo">
-                                <label><input type="radio" name="pele"> Cianose</label>
-                                <input type="text" class="input-inline">
+                                <label><input type="radio" name="pele" value="Cianose"> Cianose</label>
+                                <input type="text" class="input-inline" name="detalhe_cianose">
                             </div>
-                            <label class="item-checkbox"><input type="radio" name="pele"> Quente</label>
+                            <label class="item-checkbox"><input type="radio" name="pele" value="Quente"> Quente</label>
                             <div class="item-com-input-externo">
-                                <label><input type="radio" name="pele"> Fria</label>
-                                <input type="text" class="input-inline">
+                                <label><input type="radio" name="pele" value="Fria"> Fria</label>
+                                <input type="text" class="input-inline" name="detalhe_fria">
                             </div>
-                            <label class="item-checkbox"><input type="radio" name="pele"> Anasarca</label>
-                            <label class="item-checkbox"><input type="radio" name="pele"> Edema</label>
-                            <label class="item-checkbox"><input type="radio" name="pele"> Úmida</label>
+                            <label class="item-checkbox"><input type="radio" name="pele" value="Anasarca"> Anasarca</label>
+                            <label class="item-checkbox"><input type="radio" name="pele" value="Edema"> Edema</label>
+                            <label class="item-checkbox"><input type="radio" name="pele" value="Úmida"> Úmida</label>
                         </div>
                     </fieldset>
 
                     <fieldset class="grupo-fieldset">
                         <legend>Dor torácica Típica</legend>
                         <div class="grupo-checkbox">
-                            <label class="item-checkbox"><input type="radio" name="dor-toracica"> Irrad. Membros esquerdos</label>
-                            <label class="item-checkbox"><input type="radio" name="dor-toracica"> Irrad. Hipocôndrio</label>
-                            <label class="item-checkbox"><input type="radio" name="dor-toracica"> Irrad. Epigástrica</label>
-                            <label class="item-checkbox"><input type="radio" name="dor-toracica"> Dispneia/Sudorese</label>
-                            <label class="item-checkbox"><input type="radio" name="dor-toracica"> Náuseas/Vômitos</label>
-                            <label class="item-checkbox"><input type="radio" name="dor-toracica"> Palpitações</label>
-                            <label class="item-checkbox"><input type="radio" name="dor-toracica"> Síncope</label>
-                            <label class="item-checkbox"><input type="radio" name="dor-toracica"> Dores Lombares</label>
-                            <label class="item-checkbox"><input type="radio" name="dor-toracica"> Edema Agudo Pulmão</label>
-                            <label class="item-checkbox"><input type="radio" name="dor-toracica"> Hipertensão</label>
-                            <label class="item-checkbox"><input type="radio" name="dor-toracica"> H. Ocular Congestão</label>
-                            <label class="item-checkbox"><input type="radio" name="dor-toracica"> Palidez Cutânea</label>
-                            <label class="item-checkbox"><input type="radio" name="dor-toracica"> Parestesia</label>
-                            <label class="item-checkbox"><input type="radio" name="dor-toracica"> Astenia</label>
+                            <label class="item-checkbox"><input type="radio" name="dor_toracica" value="Irrad. Membros esquerdos"> Irrad. Membros esquerdos</label>
+                            <label class="item-checkbox"><input type="radio" name="dor_toracica" value="Irrad. Hipocôndrio"> Irrad. Hipocôndrio</label>
+                            <label class="item-checkbox"><input type="radio" name="dor_toracica" value="Irrad. Epigástrica"> Irrad. Epigástrica</label>
+                            <label class="item-checkbox"><input type="radio" name="dor_toracica" value="Dispneia/Sudorese"> Dispneia/Sudorese</label>
+                            <label class="item-checkbox"><input type="radio" name="dor_toracica" value="Náuseas/Vômitos"> Náuseas/Vômitos</label>
+                            <label class="item-checkbox"><input type="radio" name="dor_toracica" value="Palpitações"> Palpitações</label>
+                            <label class="item-checkbox"><input type="radio" name="dor_toracica" value="Síncope"> Síncope</label>
+                            <label class="item-checkbox"><input type="radio" name="dor_toracica" value="Dores Lombares"> Dores Lombares</label>
+                            <label class="item-checkbox"><input type="radio" name="dor_toracica" value="Edema Agudo Pulmão"> Edema Agudo Pulmão</label>
+                            <label class="item-checkbox"><input type="radio" name="dor_toracica" value="Hipertensão"> Hipertensão</label>
+                            <label class="item-checkbox"><input type="radio" name="dor_toracica" value="H. Ocular Congestão"> H. Ocular Congestão</label>
+                            <label class="item-checkbox"><input type="radio" name="dor_toracica" value="Palidez Cutânea"> Palidez Cutânea</label>
+                            <label class="item-checkbox"><input type="radio" name="dor_toracica" value="Parestesia"> Parestesia</label>
+                            <label class="item-checkbox"><input type="radio" name="dor_toracica" value="Astenia"> Astenia</label>
                         </div>
                     </fieldset>
 

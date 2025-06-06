@@ -468,6 +468,7 @@ input[type="radio"] {
 
 .tabela-sinais-vitais {
     width: 100%;
+/*  PÁGINA DE LOGIN  */
     border-collapse: collapse; 
     min-width: 600px; 
 }
@@ -507,3 +508,68 @@ input[type="radio"] {
     background-color: #f8f9fa;
 }
 
+
+/* Container geral */
+.pagina-app .container-formulario {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Título */
+.pagina-app .container-formulario h2 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--texto-escuro);
+    border-bottom: 1px solid var(--borda-cor);
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+/* Grupos de dados */
+.pagina-app .grupo-formulario {
+    margin-bottom: 25px;
+}
+
+/* Título de cada grupo */
+.pagina-app .grupo-formulario h3 {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--cor-primaria);
+    border-bottom: 2px solid var(--cor-primaria);
+    padding-bottom: 5px;
+}
+
+/* Item individual do dado */
+.pagina-app .item-dado {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Nome do campo */
+.pagina-app .item-dado .rotulo {
+    font-weight: 700;
+    min-width: 180px;
+    color: var(--texto-escuro);
+}
+
+/* Valor do campo */
+.pagina-app .item-dado .valor {
+    flex-grow: 1;
+}
+
+/* Para visualização em telas menores */
+@media (max-width: 600px) {
+    .pagina-app .item-dado {
+        flex-direction: column;
+    }
+    .pagina-app .item-dado .rotulo {
+        min-width: auto;
+    }
+}
