@@ -25,12 +25,19 @@
                 <li><a href="06.Evolucao2.html"><span class="material-icons">timeline</span> EVOLUÇÃO/CONSULTA</a></li>
                 <li><a href="07.Parametros2.html"><span class="material-icons">analytics</span> SINAIS VITAIS E PARÂMETROS EVOLUTIVOS</a></li>
 
+<<<<<<< HEAD
             </ul>
 
             <div class="rodape-lateral">
                 <a href="../Projeto_PAI_Main/Inicial.html"><span class="material-icons">arrow_back</span></a>
             </div>
             
+=======
+                <div class="rodape-lateral">
+                    <a href="../Projeto_PAI_Main/Inicial.html"><span class="material-icons">arrow_back</span></a>
+                </div>
+            </ul>
+>>>>>>> 1d0211b3402cd15254cc1e2d62179435edef91de
         </nav>
 
         <main class="conteudo-principal">
@@ -50,20 +57,22 @@
 
             <div class="container-formulario">
                 <h2>dados do paciente</h2>
-                <form>
+
+
+                <form method="POST" action="salvar_dados_paciente.php">
                     <div class="grupo-formulario">
                         <label for="nome">Nome</label>
-                        <input type="text" id="nome">
+                        <input type="text" id="nome" name="nome" required>
                     </div>
 
                     <div class="grupo-formulario">
                         <label for="idade">Idade</label>
-                        <input type="text" id="idade">
+                        <input type="text" id="idade" name="idade" required>
                     </div>
 
                     <div class="grupo-formulario">
                         <label for="genero">Gênero</label>
-                        <select id="genero">
+                        <select id="genero" name="genero" required>
                             <option value="" disabled selected>Selecione...</option>
                             <option value="feminino">Feminino</option>
                             <option value="masculino">Masculino</option>
@@ -73,15 +82,15 @@
                     </div>
 
                     <div class="grupo-formulario">
-                        <label for="periodo">Periodo</label>
-                        <input type="text" id="periodo">
+                        <label for="cpf">CPF</label>
+                        <input type="text" id="cpf" name="cpf" required>
                     </div>
 
                     <div class="grupo-formulario">
                         <label for="curso">Curso</label>
-                        <input type="text" id="curso">
+                        <input type="text" id="curso" name="curso" required>
                     </div>
-                    
+
                     <div class="acoes-formulario">
                        <button onclick="window.location.href='02.Queixas2.html'" class="botao-avancar">AVANÇAR</button>
                     </div>

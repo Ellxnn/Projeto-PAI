@@ -47,33 +47,34 @@
 
             <div class="container-formulario">
                 <h2>EVOLUÇÃO/CONDUTA</h2>
-                <form>
-                    <div class="grupo-formulario">
-                        <label for="comentario">Comentário</label>
-                        <textarea id="comentario" rows="6"></textarea>
-                    </div>
-                    
-                    <fieldset class="grupo-fieldset">
-                        <legend>Procedimentos</legend>
-                        <div class="grupo-checkbox">
-                            <label class="item-checkbox"><input type="checkbox" name="procedimento"> Colar Cervical</label>
-                            <label class="item-checkbox"><input type="checkbox" name="procedimento"> Máscara/Ambú</label>
-                            <label class="item-checkbox"><input type="checkbox" name="procedimento"> Curativo</label>
-                            <label class="item-checkbox"><input type="checkbox" name="procedimento"> Compressão Direta</label>
-                            <label class="item-checkbox"><input type="checkbox" name="procedimento"> Elevação Membro</label>
-                            <label class="item-checkbox"><input type="checkbox" name="procedimento"> Compressão Pontos Arteriais</label>
-                            <label class="item-checkbox"><input type="checkbox" name="procedimento"> Imobilização</label>
-                            <label class="item-checkbox"><input type="checkbox" name="procedimento"> Imobilização com Tala Fácil</label>
-                            <label class="item-checkbox"><input type="checkbox" name="procedimento"> Imobilização com Tala Rígida</label>
-                            <label class="item-checkbox"><input type="checkbox" name="procedimento"> Imobilização com Bandagens</label>
-                            <label class="item-checkbox"><input type="checkbox" name="procedimento"> Imobilização Prancha Rígida</label>
-                        </div>
-                    </fieldset>
+                <form method="POST" action="salvar_evolucao.php">
+        <div class="grupo-formulario">
+            <label for="comentario">Comentário</label>
+            <textarea id="comentario" name="comentario" rows="6"></textarea>
+        </div>
+        
+        <fieldset class="grupo-fieldset">
+            <legend>Procedimentos</legend>
+            <div class="grupo-checkbox">
+                <label class="item-checkbox"><input type="checkbox" name="procedimento[]" value="Colar Cervical"> Colar Cervical</label>
+                <label class="item-checkbox"><input type="checkbox" name="procedimento[]" value="Máscara/Ambú"> Máscara/Ambú</label>
+                <label class="item-checkbox"><input type="checkbox" name="procedimento[]" value="Curativo"> Curativo</label>
+                <label class="item-checkbox"><input type="checkbox" name="procedimento[]" value="Compressão Direta"> Compressão Direta</label>
+                <label class="item-checkbox"><input type="checkbox" name="procedimento[]" value="Elevação Membro"> Elevação Membro</label>
+                <label class="item-checkbox"><input type="checkbox" name="procedimento[]" value="Compressão Pontos Arteriais"> Compressão Pontos Arteriais</label>
+                <label class="item-checkbox"><input type="checkbox" name="procedimento[]" value="Imobilização"> Imobilização</label>
+                <label class="item-checkbox"><input type="checkbox" name="procedimento[]" value="Imobilização com Tala Fácil"> Imobilização com Tala Fácil</label>
+                <label class="item-checkbox"><input type="checkbox" name="procedimento[]" value="Imobilização com Tala Rígida"> Imobilização com Tala Rígida</label>
+                <label class="item-checkbox"><input type="checkbox" name="procedimento[]" value="Imobilização com Bandagens"> Imobilização com Bandagens</label>
+                <label class="item-checkbox"><input type="checkbox" name="procedimento[]" value="Imobilização Prancha Rígida"> Imobilização Prancha Rígida</label>
+            </div>
+        </fieldset>
 
-                    <div class="acoes-formulario">
-                        <button type="submit" class="botao-avancar">AVANÇAR</button>
-                    </div>
-                </form>
+        <div class="acoes-formulario">
+            <button type="submit" class="botao-avancar">AVANÇAR</button>
+        </div>
+    </form>
+
             </div>
         </main>
     </div>
