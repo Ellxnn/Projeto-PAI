@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAI - Login</title>
+    <link rel="stylesheet" href="css/default.css" />
+</head>
+<body class="pagina-login"> 
+
+    <main class="container-principal">
+        <section class="area-logo">
+            <img src="../Projeto_PAI_Main/imagens/pai_logo.png" alt="Logo PAI - Pronto Atendimento Institucional">
+        </section>
+
+        <section class="area-login">
+            <div class="formulario">
+                <h1>LOGIN</h1>
+                
+                <div class="grupo-input">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" autocomplete="off">
+                </div>
+
+                <div class="grupo-input">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" autocomplete="off">
+                </div>
+                
+                <button class="botao-entrar" onclick="simularLogin()">ENTRAR</button>
+            </div>
+        </section>
+    </main>
+
+<script>
+  function simularLogin() {
+    // Pega os valores dos campos pelos novos IDs em português
+    const email = document.getElementById('email').value.trim();
+    const senha = document.getElementById('senha').value.trim();
+
+    // A lógica de verificação e redirecionamento permanece a mesma
+    if (email && senha) {
+      window.location.href = "../Projeto_PAI_Main/Inicial.html";
+    } else {
+      alert("Por favor, preencha o email e a senha.");
+    }
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAI - Dados do Paciente</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="pagina-app">
+    <div class="container-app">
+        <nav class="barra-lateral">
+            <div class="cabecalho-lateral">
+                <img src="../Projeto_PAI_Main/imagens/pai_logo_formulario.png" alt="Logo PAI" class="logo-lateral">
+            </div>
+            <ul class="menu-lateral">
+                <li class="ativo"><a href="01.dados_paciente.html"><span class="material-icons">person_add</span> DADOS DO PACIENTE</a></li>
+                <li><a href="02.Queixas2.html"><span class="material-icons">assignment</span> MOTIVO DO ATENDIMENTO</a></li>
+                <li><a href="03.inicial2.html"><span class="material-icons">description</span> EXAME INICIAL</a></li>
+                <li><a href="04.Circulatorio2.html"><span class="material-icons">favorite_border</span> CIRCULATÓRIO</a></li>
+                <li><a href="05.Neuro2.html"><span class="material-icons">psychology</span> NEURO</a></li>
+                <li><a href="06.Evolucao2.html"><span class="material-icons">timeline</span> EVOLUÇÃO/CONSULTA</a></li>
+                <li><a href="07.Parametros2.html"><span class="material-icons">analytics</span> SINAIS VITAIS E PARÂMETROS EVOLUTIVOS</a></li>
+
+                <div class="rodape-lateral">
+                <a href="../Projeto_PAI_Main/Inicial.html"><span class="material-icons">arrow_back</span></a>
+            </div>
+            </ul>
+            
+        </nav>
+
+        <main class="conteudo-principal">
+            <header class="cabecalho-principal">
+                <div class="container-busca">
+                    <input type="text" placeholder="Pesquisar Paciente">
+                    <span class="material-icons icone-busca">search</span>
+                </div>
+                <div class="perfil-usuario">
+                    <img src="../Projeto_PAI_Main/imagens/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_5247852.jpg" alt="Avatar Maria Clara" class="avatar-usuario">
+                    <div>
+                        <span>Plantonista</span>
+                        <strong>MARIA CLARA</strong>
+                    </div>
+                </div>
+            </header>
+
+            <div class="container-formulario">
+                <h2>dados do paciente</h2>
+                <form>
+                    <div class="grupo-formulario">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome">
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="idade">Idade</label>
+                        <input type="text" id="idade">
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="genero">Gênero</label>
+                        <select id="genero">
+                            <option value="" disabled selected>Selecione...</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="outro">Outro</option>
+                            <option value="nao-informar">Prefiro não informar</option>
+                        </select>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="periodo">Periodo</label>
+                        <input type="text" id="periodo">
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="curso">Curso</label>
+                        <input type="text" id="curso">
+                    </div>
+                    
+                    <div class="acoes-formulario">
+                        <button type="submit" class="botao-avancar">AVANÇAR</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

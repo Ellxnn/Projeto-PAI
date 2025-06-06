@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAI - Motivo do Atendimento</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="pagina-app">
+    <div class="container-app">
+        <nav class="barra-lateral">
+            <div class="cabecalho-lateral">
+                <img src="../Projeto_PAI_Main/imagens/pai_logo_formulario.png" alt="Logo PAI" class="logo-lateral">
+            </div>
+            <ul class="menu-lateral">
+                <li><a href="01.dados_paciente.html"><span class="material-icons">person_add</span> DADOS DO PACIENTE</a></li>
+                <li class="ativo"><a href="02.Queixas2.html"><span class="material-icons">assignment</span> MOTIVO DO ATENDIMENTO</a></li>
+                <li><a href="03.inicial2.html"><span class="material-icons">description</span> EXAME INICIAL</a></li>
+                <li><a href="04.Circulatorio2.html"><span class="material-icons">favorite_border</span> CIRCULATÓRIO</a></li>
+                <li><a href="05.Neuro2.html"><span class="material-icons">psychology</span> NEURO</a></li>
+                <li><a href="06.Evolucao2.html"><span class="material-icons">timeline</span> EVOLUÇÃO/CONSULTA</a></li>
+                <li><a href="07.Parametros2.html"><span class="material-icons">analytics</span> SINAIS VITAIS E PARÂMETROS EVOLUTIVOS</a></li>
+            </ul>
+            <div class="rodape-lateral">
+                <a href="../Projeto_PAI_Main/Inicial.html"><span class="material-icons">arrow_back</span></a>
+            </div>
+        </nav>
+
+        <main class="conteudo-principal">
+            <header class="cabecalho-principal">
+                <div class="container-busca">
+                    <input type="text" placeholder="Pesquisar Paciente">
+                    <span class="material-icons icone-busca">search</span>
+                </div>
+                <div class="perfil-usuario">
+                    <img src="../Projeto_PAI_Main/imagens/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_5247852.jpg" alt="Avatar Plantonista" class="avatar-usuario">
+                    <div>
+                        <span>Plantonista</span>
+                        <strong>MARIA CLARA</strong>
+                    </div>
+                </div>
+            </header>
+
+            <div class="container-formulario">
+                <h2>motivo do atendimento</h2>
+                <form>
+                    <div class="grupo-formulario">
+                        <label for="data-atendimento">Data</label>
+                        <div class="input-com-icone">
+                            <input type="text" id="data-atendimento" value="06/17/2025">
+                            <span class="material-icons">calendar_today</span>
+                        </div>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="descricao-motivo">Descreva Aqui o motivo do atendimento</label>
+                        <textarea id="descricao-motivo" rows="5"></textarea>
+                    </div>
+
+                    <fieldset class="grupo-fieldset">
+                        <legend>Queixas Principais</legend>
+                        <div class="grupo-checkbox">
+                            <label class="item-checkbox"><input type="checkbox"> Dificuldade respiratória</label>
+                            <label class="item-checkbox-com-input"><input type="checkbox"> Febre <input type="text" placeholder="Graus:" class="input-inline"></label>
+                            <label class="item-checkbox"><input type="checkbox"> Náuseas</label>
+                            <label class="item-checkbox"><input type="checkbox"> Alergia</label>
+                            <label class="item-checkbox"><input type="checkbox"> Vômito</label>
+                            <label class="item-checkbox"><input type="checkbox"> Tontura</label>
+                            <label class="item-checkbox-com-input"><input type="checkbox"> Dor <input type="text" placeholder="Local:" class="input-inline"></label>
+                            <label class="item-checkbox"><input type="checkbox"> Outros</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="grupo-fieldset">
+                        <legend>Estado Inicial</legend>
+                        <div class="grupo-checkbox">
+                            <label class="item-checkbox"><input type="radio" name="estado-inicial"> Leve</label>
+                            <label class="item-checkbox"><input type="radio" name="estado-inicial"> Moderado</label>
+                            <label class="item-checkbox"><input type="radio" name="estado-inicial"> Grave</label>
+                            <label class="item-checkbox"><input type="radio" name="estado-inicial"> Crítico</label>
+                            <label class="item-checkbox"><input type="radio" name="estado-inicial"> Instável</label>
+                            <label class="item-checkbox"><input type="radio" name="estado-inicial"> Estável</label>
+                        </div>
+                    </fieldset>
+                    
+                    <div class="acoes-formulario">
+                        <button type="submit" class="botao-avancar">AVANÇAR</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
