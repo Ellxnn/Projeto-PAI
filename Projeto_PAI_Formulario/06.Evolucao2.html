@@ -3,57 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title role="dddd">PAI - Pronto Evolução e Conduta</title>
+    <title>PAI - Evolução e Conduta</title>
     <link rel="stylesheet" href="css/default.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+<body class="pagina-app">
+    <div class="container-app">
+        <nav class="barra-lateral">
+            <div class="cabecalho-lateral">
+                <img src="../Projeto_PAI_Main/imagens/pai_logo_formulario.png" alt="Logo PAI" class="logo-lateral">
+            </div>
+            <ul class="menu-lateral">
+                <li><a href="01.dados_paciente.html"><span class="material-icons">person_add</span> DADOS DO PACIENTE</a></li>
+                <li><a href="02.Queixas2.html"><span class="material-icons">assignment</span> MOTIVO DO ATENDIMENTO</a></li>
+                <li><a href="03.inicial2.html"><span class="material-icons">description</span> EXAME INICIAL</a></li>
+                <li><a href="04.Circulatorio2.html"><span class="material-icons">favorite_border</span> CIRCULATÓRIO</a></li>
+                <li><a href="05.Neuro2.html"><span class="material-icons">psychology</span> NEURO</a></li>
+                <li class="ativo"><a href="06.Evolucao2.html"><span class="material-icons">timeline</span> EVOLUÇÃO/CONDUTA</a></li>
+                <li><a href="07.Parametros2.html"><span class="material-icons">analytics</span> SINAIS VITAIS E PARÂMETROS EVOLUTIVOS</a></li>
+            </ul>
+            <div class="rodape-lateral">
+                <a href="../Projeto_PAI_Main/Inicial.html"><span class="material-icons">arrow_back</span></a>
+            </div>
+        </nav>
 
-<body>
-    <nav class="sidebar">
-        <a href="00.Queixas2.html" class="sidebar-item"><img src="imgs/queixas.png" alt="Exame Inicial"></a>
-        <a href="01.inicial2.html" class="sidebar-item"><img src="imgs/respiratorio.png" alt="Respiratório"></a>
-        <a href="02.Circulatorio2.html" class="sidebar-item"><img src="imgs/circulatorio.png" alt="Circulatório"></a>
-        <a href="03.Neuro2.html" class="sidebar-item"><img src="imgs/neuro.png" alt="Neuro"></a>
-        <a href="04.Evolucao2.html" class="sidebar-item active"><img src="imgs/evolucao.png" alt="Evolução"></a>
-        <a href="05.Parametros2.html" class="sidebar-item"><img src="imgs/parametros.png" alt="Parâmetros"></a>
-        <a href="index.html" class="sidebar-item"><img src="imgs/sair.png" alt="Login"></a>
-    </nav>
-
-    <div class="container">
-        <div class="header">
-            <img src="../Projeto_PAI_Main/imagens/pai_logo_formulario.png" class="pai-logo" alt="PAI Logo">
-        </div>
-
-        <div class="content">
-            <form>
-                <h2>Evolução/Conduta</h2>
-
-                <input type="text" id="campoevolucao" class="input-text" placeholder="Descreva aqui observações sobre a evolução e conduta...">
-
-                <fieldset class="section">
-                <legend>Procedimentos</legend>
-                    <div class="checkbox-group">
-                        <label><input type="checkbox" id="colarCervical"> Colar Cervical</label>
-                        <label><input type="checkbox" id="mascAmbu"> Máscara/Ambu</label>
-                        <label><input type="checkbox" id="curativo"> Curativo</label>
-                        <label><input type="checkbox" id="compressaoDireta"> Compressão Direta</label>
-                        <label><input type="checkbox" id="elevacaoMembro"> Elevação Membro</label>
-                        <label><input type="checkbox" id="compressaoPontosArt"> Compressão Pontos Arteriais</label>
-                        <label><input type="checkbox" id="imobilizacao"> Imobilização</label>
-                        <label><input type="checkbox" id="imobTalaFlexivel"> Imobilização com Tala Fácil</label>
-                        <label><input type="checkbox" id="imobTalaTracao"> Imobilização com Tala Tração</label>
-                        <label><input type="checkbox" id="imobBandagens"> Imobilização com Bandagens</label>
-                        <label><input type="checkbox" id="imobPrancha"> Imob. Prancha Rígida</label>
+        <main class="conteudo-principal">
+            <header class="cabecalho-principal">
+                <div class="container-busca">
+                    <input type="text" placeholder="Pesquisar Paciente">
+                    <span class="material-icons icone-busca">search</span>
+                </div>
+                <div class="perfil-usuario">
+                    <img src="../Projeto_PAI_Main/imagens/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_5247852.jpg" alt="Avatar Plantonista" class="avatar-usuario">
+                    <div>
+                        <span>Plantonista</span>
+                        <strong>MARIA CLARA</strong>
                     </div>
-                </fieldset>
-            </form>
+                </div>
+            </header>
 
-        <div class="buttons">
-            <a href="03.Neuro2.html"><button>Anterior</button></a>
-            <a href="05.Parametros2.html"><button>Próximo</button></a>
-        </div>
+            <div class="container-formulario">
+                <h2>EVOLUÇÃO/CONDUTA</h2>
+                <form>
+                    <div class="grupo-formulario">
+                        <label for="comentario">Comentário</label>
+                        <textarea id="comentario" rows="6"></textarea>
+                    </div>
+                    
+                    <fieldset class="grupo-fieldset">
+                        <legend>Procedimentos</legend>
+                        <div class="grupo-checkbox">
+                            <label class="item-checkbox"><input type="checkbox" name="procedimento"> Colar Cervical</label>
+                            <label class="item-checkbox"><input type="checkbox" name="procedimento"> Máscara/Ambú</label>
+                            <label class="item-checkbox"><input type="checkbox" name="procedimento"> Curativo</label>
+                            <label class="item-checkbox"><input type="checkbox" name="procedimento"> Compressão Direta</label>
+                            <label class="item-checkbox"><input type="checkbox" name="procedimento"> Elevação Membro</label>
+                            <label class="item-checkbox"><input type="checkbox" name="procedimento"> Compressão Pontos Arteriais</label>
+                            <label class="item-checkbox"><input type="checkbox" name="procedimento"> Imobilização</label>
+                            <label class="item-checkbox"><input type="checkbox" name="procedimento"> Imobilização com Tala Fácil</label>
+                            <label class="item-checkbox"><input type="checkbox" name="procedimento"> Imobilização com Tala Rígida</label>
+                            <label class="item-checkbox"><input type="checkbox" name="procedimento"> Imobilização com Bandagens</label>
+                            <label class="item-checkbox"><input type="checkbox" name="procedimento"> Imobilização Prancha Rígida</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="acoes-formulario">
+                        <button type="submit" class="botao-avancar">AVANÇAR</button>
+                    </div>
+                </form>
+            </div>
+        </main>
     </div>
-
-    <script src="js/realce.js"></script>
-
 </body>
 </html>

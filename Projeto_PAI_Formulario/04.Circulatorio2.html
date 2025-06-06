@@ -3,63 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAI - Circulatório</title>
+    <title>PAI - Exame Circulatório</title>
     <link rel="stylesheet" href="css/default.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-
-<body>
-    <nav class="sidebar">
-        <a href="00.Queixas2.html" class="sidebar-item"><img src="imgs/queixas.png" alt="Exame Inicial"></a>
-        <a href="01.inicial2.html" class="sidebar-item"><img src="imgs/respiratorio.png" alt="Respiratório"></a>
-        <a href="02.Circulatorio2.html" class="sidebar-item active"><img src="imgs/circulatorio.png" alt="Circulatório"></a>
-        <a href="03.Neuro2.html" class="sidebar-item"><img src="imgs/neuro.png" alt="Neuro"></a>
-        <a href="04.Evolucao2.html" class="sidebar-item"><img src="imgs/evolucao.png" alt="Evolução"></a>
-        <a href="05.Parametros2.html" class="sidebar-item"><img src="imgs/parametros.png" alt="Parâmetros"></a>
-        <a href="index.html" class="sidebar-item"><img src="imgs/sair.png" alt="Login"></a>
-    </nav>
-
-    <div class="container">
-        <div class="header">
-            <img src="../Projeto_PAI_Main/imagens/pai_logo_formulario.png" class="pai-logo" alt="PAI Logo">
-        </div>
-        <div class="content">
-            <form>
-                <fieldset class="section">
-                    <legend>Circulatório</legend>
-                    <div class="checkbox-group">
-                        <label><input type="checkbox" id="pulso_regular"> Pulso Regular</label>
-                        <label><input type="checkbox" id="pulso_irregular"> Irregular</label>
-                        <label><input type="checkbox" id="pulso_ausente"> Ausente</label>
-                        <label><input type="checkbox" id="parada_cardiaca"> Parada Cárdio Respiratória</label>
-                        <label><input type="checkbox" id="pele_normal"> Pele Normal</label>
-                        <label><input type="checkbox" id="palidez"> Palidez</label>
-                        <label><input type="checkbox" id="cianose"> Cianose</label>
-                        <label><input type="checkbox" id="pele_quente"> Quente</label>
-                        <label><input type="checkbox" id="anasarca"> Anasarca</label>
-                        <label><input type="checkbox" id="pele_fria"> Fria</label>
-                        <label><input type="checkbox" id="pele_seca"> Seca</label>
-                        <label><input type="checkbox" id="pele_umida"> Úmida</label>
-                        <label><input type="checkbox" id="dor_toracica_tipica"> Dor Torácica Típica</label>
-                        <label><input type="checkbox" id="dor_toracica_atipica"> Dor Torácica Atípica</label>
-                        <label><input type="checkbox" id="hipertensao"> PA - Hipertensão</label>
-                        <label><input type="checkbox" id="choque_hipovolemico"> Choque Hipovolêmico</label>
-                        <label><input type="checkbox" id="edema_ausente"> Edema Ausente</label>
-                        <label><input type="checkbox" id="septicemia"> Séptico</label>
-                        <label><input type="checkbox" id="cardiog"> Cardiogênico</label>
-                        <label><input type="checkbox" id="anafilatico"> Anafilático</label>
-                        <label><input type="checkbox" id="palpebral"> Palpebral</label>
-                        <label><input type="checkbox" id="m_inferiores"> Membros Inferiores</label>
-                    </div>
-                </fieldset>
-            </form>
-            <div class="buttons">
-                <a href="01.inicial2.html"><button>Anterior</button></a>
-                <a href="03.Neuro2.html"><button>Próximo</button></a>
+<body class="pagina-app">
+    <div class="container-app">
+        <nav class="barra-lateral">
+            <div class="cabecalho-lateral">
+                <img src="../Projeto_PAI_Main/imagens/pai_logo_formulario.png" alt="Logo PAI" class="logo-lateral">
             </div>
-        </div>    
+            <ul class="menu-lateral">
+                <li><a href="01.dados_paciente.html"><span class="material-icons">person_add</span> DADOS DO PACIENTE</a></li>
+                <li><a href="02.Queixas2.html"><span class="material-icons">assignment</span> MOTIVO DO ATENDIMENTO</a></li>
+                <li><a href="03.inicial2.html"><span class="material-icons">description</span> EXAME INICIAL</a></li>
+                <li class="ativo"><a href="04.Circulatorio2.html"><span class="material-icons">favorite_border</span> CIRCULATÓRIO</a></li>
+                <li><a href="05.Neuro2.html"><span class="material-icons">psychology</span> NEURO</a></li>
+                <li><a href="06.Evolucao2.html"><span class="material-icons">timeline</span> EVOLUÇÃO/CONSULTA</a></li>
+                <li><a href="07.Parametros2.html"><span class="material-icons">analytics</span> SINAIS VITAIS E PARÂMETROS EVOLUTIVOS</a></li>
+            </ul>
+            <div class="rodape-lateral">
+                <a href="../Projeto_PAI_Main/Inicial.html"><span class="material-icons">arrow_back</span></a>
+            </div>
+        </nav>
+
+        <main class="conteudo-principal">
+            <header class="cabecalho-principal">
+                <div class="container-busca">
+                    <input type="text" placeholder="Pesquisar Paciente">
+                    <span class="material-icons icone-busca">search</span>
+                </div>
+                <div class="perfil-usuario">
+                    <img src="../Projeto_PAI_Main/imagens/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_5247852.jpg" alt="Avatar Plantonista" class="avatar-usuario">
+                    <div>
+                        <span>Plantonista</span>
+                        <strong>MARIA CLARA</strong>
+                    </div>
+                </div>
+            </header>
+
+            <div class="container-formulario">
+                <h2>CIRCULATÓRIO</h2>
+                <form>
+                    <fieldset class="grupo-fieldset">
+                        <legend>Pulso</legend>
+                        <div class="grupo-checkbox">
+                            <label class="item-checkbox"><input type="radio" name="pulso"> Regular</label>
+                            <label class="item-checkbox"><input type="radio" name="pulso"> Irregular</label>
+                            <label class="item-checkbox"><input type="radio" name="pulso"> Ausente</label>
+                            <label class="item-checkbox"><input type="radio" name="pulso"> Rítmico / Desrítmico</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="grupo-fieldset">
+                        <legend>Pele</legend>
+                        <div class="grupo-checkbox">
+                            <label class="item-checkbox"><input type="radio" name="pele"> Isquemia</label>
+                            <label class="item-checkbox"><input type="radio" name="pele"> Pálida</label>
+                            <div class="item-com-input-externo">
+                                <label><input type="radio" name="pele"> Cianose</label>
+                                <input type="text" class="input-inline">
+                            </div>
+                            <label class="item-checkbox"><input type="radio" name="pele"> Quente</label>
+                            <div class="item-com-input-externo">
+                                <label><input type="radio" name="pele"> Fria</label>
+                                <input type="text" class="input-inline">
+                            </div>
+                            <label class="item-checkbox"><input type="radio" name="pele"> Anasarca</label>
+                            <label class="item-checkbox"><input type="radio" name="pele"> Edema</label>
+                            <label class="item-checkbox"><input type="radio" name="pele"> Úmida</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="grupo-fieldset">
+                        <legend>Dor torácica Típica</legend>
+                        <div class="grupo-checkbox">
+                            <label class="item-checkbox"><input type="radio" name="dor-toracica"> Irrad. Membros esquerdos</label>
+                            <label class="item-checkbox"><input type="radio" name="dor-toracica"> Irrad. Hipocôndrio</label>
+                            <label class="item-checkbox"><input type="radio" name="dor-toracica"> Irrad. Epigástrica</label>
+                            <label class="item-checkbox"><input type="radio" name="dor-toracica"> Dispneia/Sudorese</label>
+                            <label class="item-checkbox"><input type="radio" name="dor-toracica"> Náuseas/Vômitos</label>
+                            <label class="item-checkbox"><input type="radio" name="dor-toracica"> Palpitações</label>
+                            <label class="item-checkbox"><input type="radio" name="dor-toracica"> Síncope</label>
+                            <label class="item-checkbox"><input type="radio" name="dor-toracica"> Dores Lombares</label>
+                            <label class="item-checkbox"><input type="radio" name="dor-toracica"> Edema Agudo Pulmão</label>
+                            <label class="item-checkbox"><input type="radio" name="dor-toracica"> Hipertensão</label>
+                            <label class="item-checkbox"><input type="radio" name="dor-toracica"> H. Ocular Congestão</label>
+                            <label class="item-checkbox"><input type="radio" name="dor-toracica"> Palidez Cutânea</label>
+                            <label class="item-checkbox"><input type="radio" name="dor-toracica"> Parestesia</label>
+                            <label class="item-checkbox"><input type="radio" name="dor-toracica"> Astenia</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="acoes-formulario">
+                        <button type="submit" class="botao-avancar">AVANÇAR</button>
+                    </div>
+                </form>
+            </div>
+        </main>
     </div>
-
-    <script src="js/realce.js"></script>
-
 </body>
 </html>

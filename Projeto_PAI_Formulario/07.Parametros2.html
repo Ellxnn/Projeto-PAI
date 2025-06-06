@@ -3,135 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAI - Sinais Vitais e Parâmetros Evolutivos</title>
+    <title>PAI - Sinais Vitais</title>
     <link rel="stylesheet" href="css/default.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-
-<body>
-    <nav class="sidebar">
-        <a href="00.Queixas2.html" class="sidebar-item"><img src="imgs/queixas.png" alt="Exame Inicial"></a>
-        <a href="01.inicial2.html" class="sidebar-item"><img src="imgs/respiratorio.png" alt="Respiratório"></a>
-        <a href="02.Circulatorio2.html" class="sidebar-item"><img src="imgs/circulatorio.png" alt="Circulatório"></a>
-        <a href="03.Neuro2.html" class="sidebar-item"><img src="imgs/neuro.png" alt="Neuro"></a>
-        <a href="04.Evolucao2.html" class="sidebar-item"><img src="imgs/evolucao.png" alt="Evolução"></a>
-        <a href="05.Parametros2.html" class="sidebar-item active"><img src="imgs/parametros.png" alt="Parâmetros"></a>
-        <a href="../Projeto_PAI_Main/Inicial.html" class="sidebar-item"><img src="imgs/sair.png" alt="Login"></a>
-
-
-    </nav>
-
-    <div class="container">
-        <div class="header">
-            <img src="../Projeto_PAI_Main/imagens/pai_logo_formulario.png" class="pai-logo" alt="PAI Logo">
-        </div>
-
-        <div class="content">
-            <h2>Sinais Vitais e<br>Parâmetros Evolutivos</h2>
-
-            <div class="table-responsive">
-                <table class="table">
-                    <tr>
-                        <th>Hora</th>
-                        <th>PA</th>
-                        <th>FC</th>
-                        <th>SpO²</th>
-                        <th>HGT</th>
-                        <th>Temp</th>
-                        <th>Glasgow</th>
-                    </tr>
-                    <tr>
-                        <td><input class="input-cell" type="time" id="tabelaHora1" autofocus></td>
-                        <td><input class="input-cell" type="text" id="tabelaPa1"></td>
-                        <td><input class="input-cell" type="text" id="tabelaFC1"></td>
-                        <td><input class="input-cell" type="text" id="tabelaSPO1"></td>
-                        <td><input class="input-cell" type="text" id="tabelaHGT1"></td>
-                        <td><input class="input-cell" type="text" id="tabelaTemp1"></td> 
-                        <td><input class="input-cell" type="text" id="tabelaGlasgow1"></td>
-                    </tr>
-                    <tr>
-                        <td><input class="input-cell" type="time" id="tabelaHora2"></td>
-                        <td><input class="input-cell" type="text" id="tabelaPa2"></td>
-                        <td><input class="input-cell" type="text" id="tabelaFC2"></td>
-                        <td><input class="input-cell" type="text" id="tabelaSPO2"></td>
-                        <td><input class="input-cell" type="text" id="tabelaHGT2"></td>
-                        <td><input class="input-cell" type="text" id="tabelaTemp2"></td> 
-                        <td><input class="input-cell" type="text" id="tabelaGlasgow2"></td>
-                    </tr>
-                    <tr>
-                        <td><input class="input-cell" type="time" id="tabelaHora3"></td>
-                        <td><input class="input-cell" type="text" id="tabelaPa3"></td>
-                        <td><input class="input-cell" type="text" id="tabelaFC3"></td>
-                        <td><input class="input-cell" type="text" id="tabelaSPO3"></td>
-                        <td><input class="input-cell" type="text" id="tabelaHGT3"></td>
-                        <td><input class="input-cell" type="text" id="tabelaTemp3"></td> 
-                        <td><input class="input-cell" type="text" id="tabelaGlasgow3"></td>
-                    </tr>
-                    <tr>
-                        <td><input class="input-cell" type="time" id="tabelaHora4"></td>
-                        <td><input class="input-cell" type="text" id="tabelaPa4"></td>
-                        <td><input class="input-cell" type="text" id="tabelaFC4"></td>
-                        <td><input class="input-cell" type="text" id="tabelaSPO4"></td>
-                        <td><input class="input-cell" type="text" id="tabelaHGT4"></td>
-                        <td><input class="input-cell" type="text" id="tabelaTemp4"></td> 
-                        <td><input class="input-cell" type="text" id="tabelaGlasgow4"></td>
-                    </tr>
-                    <tr>
-                        <td><input class="input-cell" type="time" id="tabelaHora5"></td>
-                        <td><input class="input-cell" type="text" id="tabelaPa5"></td>
-                        <td><input class="input-cell" type="text" id="tabelaFC5"></td>
-                        <td><input class="input-cell" type="text" id="tabelaSPO5"></td>
-                        <td><input class="input-cell" type="text" id="tabelaHGT5"></td>
-                        <td><input class="input-cell" type="text" id="tabelaTemp5"></td> 
-                        <td><input class="input-cell" type="text" id="tabelaGlasgow5"></td>
-                    </tr>
-                    <tr>
-                        <td><input class="input-cell" type="time" id="tabelaHora6"></td>
-                        <td><input class="input-cell" type="text" id="tabelaPa6"></td>
-                        <td><input class="input-cell" type="text" id="tabelaFC6"></td>
-                        <td><input class="input-cell" type="text" id="tabelaSPO6"></td>
-                        <td><input class="input-cell" type="text" id="tabelaHGT6"></td>
-                        <td><input class="input-cell" type="text" id="tabelaTemp6"></td> 
-                        <td><input class="input-cell" type="text" id="tabelaGlasgow6"></td>
-                    </tr><tr>
-                        <td><input class="input-cell" type="time" id="tabelaHora7"></td>
-                        <td><input class="input-cell" type="text" id="tabelaPa7"></td>
-                        <td><input class="input-cell" type="text" id="tabelaFC7"></td>
-                        <td><input class="input-cell" type="text" id="tabelaSPO7"></td>
-                        <td><input class="input-cell" type="text" id="tabelaHGT7"></td>
-                        <td><input class="input-cell" type="text" id="tabelaTemp7"></td> 
-                        <td><input class="input-cell" type="text" id="tabelaGlasgow7"></td>
-                    </tr><tr>
-                        <td><input class="input-cell" type="time" id="tabelaHora8"></td>
-                        <td><input class="input-cell" type="text" id="tabelaPa8"></td>
-                        <td><input class="input-cell" type="text" id="tabelaFC8"></td>
-                        <td><input class="input-cell" type="text" id="tabelaSPO8"></td>
-                        <td><input class="input-cell" type="text" id="tabelaHGT8"></td>
-                        <td><input class="input-cell" type="text" id="tabelaTemp8"></td> 
-                        <td><input class="input-cell" type="text" id="tabelaGlasgow8"></td>
-                    </tr><tr>
-                        <td><input class="input-cell" type="time" id="tabelaHora9"></td>
-                        <td><input class="input-cell" type="text" id="tabelaPa9"></td>
-                        <td><input class="input-cell" type="text" id="tabelaFC9"></td>
-                        <td><input class="input-cell" type="text" id="tabelaSPO9"></td>
-                        <td><input class="input-cell" type="text" id="tabelaHGT9"></td>
-                        <td><input class="input-cell" type="text" id="tabelaTemp9"></td> 
-                        <td><input class="input-cell" type="text" id="tabelaGlasgow9"></td>
-                    </tr><tr>
-                        <td><input class="input-cell" type="time" id="tabelaHora10"></td>
-                        <td><input class="input-cell" type="text" id="tabelaPa10"></td>
-                        <td><input class="input-cell" type="text" id="tabelaFC10"></td>
-                        <td><input class="input-cell" type="text" id="tabelaSPO10"></td>
-                        <td><input class="input-cell" type="text" id="tabelaHGT10"></td>
-                        <td><input class="input-cell" type="text" id="tabelaTemp10"></td> 
-                        <td><input class="input-cell" type="text" id="tabelaGlasgow10"></td>
-                    </tr>
-                </table>
+<body class="pagina-app">
+    <div class="container-app">
+        <nav class="barra-lateral">
+            <div class="cabecalho-lateral">
+                <img src="../Projeto_PAI_Main/imagens/pai_logo_formulario.png" alt="Logo PAI" class="logo-lateral">
             </div>
-            <div class="buttons">
-                <a href="03.Neuro2.html"><button>Anterior</button></a>
-                <button>Concluir</button>
+            <ul class="menu-lateral">
+                <li><a href="01.dados_paciente.html"><span class="material-icons">person_add</span> DADOS DO PACIENTE</a></li>
+                <li><a href="02.Queixas2.html"><span class="material-icons">assignment</span> MOTIVO DO ATENDIMENTO</a></li>
+                <li><a href="03.inicial2.html"><span class="material-icons">description</span> EXAME INICIAL</a></li>
+                <li><a href="04.Circulatorio2.html"><span class="material-icons">favorite_border</span> CIRCULATÓRIO</a></li>
+                <li><a href="05.Neuro2.html"><span class="material-icons">psychology</span> NEURO</a></li>
+                <li><a href="06.Evolucao2.html"><span class="material-icons">timeline</span> EVOLUÇÃO/CONDUTA</a></li>
+                <li class="ativo"><a href="07.Parametros2.html"><span class="material-icons">analytics</span> SINAIS VITAIS E PARÂMETROS EVOLUTIVOS</a></li>
+            </ul>
+            <div class="rodape-lateral">
+                <a href="../Projeto_PAI_Main/Inicial.html"><span class="material-icons">arrow_back</span></a>
             </div>
+        </nav>
+
+        <main class="conteudo-principal">
+            <header class="cabecalho-principal">
+                <div class="container-busca">
+                    <input type="text" placeholder="Pesquisar Paciente">
+                    <span class="material-icons icone-busca">search</span>
+                </div>
+                <div class="perfil-usuario">
+                    <img src="../Projeto_PAI_Main/imagens/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_5247852.jpg" alt="Avatar Plantonista" class="avatar-usuario">
+                    <div>
+                        <span>Plantonista</span>
+                        <strong>MARIA CLARA</strong>
+                    </div>
+                </div>
+            </header>
+
+            <div class="container-formulario">
+                <h2>Sinais Vitais e Parâmetros Evolutivos</h2>
+                
+                <div class="container-tabela">
+                    <table class="tabela-sinais-vitais">
+                        <thead>
+                            <tr>
+                                <th>Hora</th>
+                                <th>PA</th>
+                                <th>FC</th>
+                                <th>SpO²</th>
+                                <th>HGT</th>
+                                <th>Temp</th>
+                                <th>Glasgow</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="time" class="input-tabela"></td>
+                                <td><input type="text" class="input-tabela"></td>
+                                <td><input type="text" class="input-tabela"></td>
+                                <td><input type="text" class="input-tabela"></td>
+                                <td><input type="text" class="input-tabela"></td>
+                                <td><input type="text" class="input-tabela"></td>
+                                <td><input type="text" class="input-tabela"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="time" class="input-tabela"></td>
+                                <td><input type="text" class="input-tabela"></td>
+                                <td><input type="text" class="input-tabela"></td>
+                                <td><input type="text" class="input-tabela"></td>
+                                <td><input type="text" class="input-tabela"></td>
+                                <td><input type="text" class="input-tabela"></td>
+                                <td><input type="text" class="input-tabela"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="time" class="input-tabela"></td>
+                                <td><input type="text" class="input-tabela"></td>
+                                <td><input type="text" class="input-tabela"></td>
+                                <td><input type="text" class="input-tabela"></td>
+                                <td><input type="text" class="input-tabela"></td>
+                                <td><input type="text" class="input-tabela"></td>
+                                <td><input type="text" class="input-tabela"></td>
+                            </tr>
+                            </tbody>
+                    </table>
+                </div>
+
+                <div class="acoes-formulario">
+                    <button type="submit" class="botao-avancar">SALVAR</button>
+                </div>
+            </div>
+        </main>
     </div>
-<script src="js/realce.js"></script>
 </body>
 </html>

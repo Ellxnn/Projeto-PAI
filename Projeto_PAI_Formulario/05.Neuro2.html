@@ -3,84 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAI - Neuro</title>
+    <title>PAI - Exame Neurológico</title>
     <link rel="stylesheet" href="css/default.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+<body class="pagina-app">
+    <div class="container-app">
+        <nav class="barra-lateral">
+            <div class="cabecalho-lateral">
+                <img src="../Projeto_PAI_Main/imagens/pai_logo_formulario.png" alt="Logo PAI" class="logo-lateral">
+            </div>
+            <ul class="menu-lateral">
+                <li><a href="01.dados_paciente.html"><span class="material-icons">person_add</span> DADOS DO PACIENTE</a></li>
+                <li><a href="02.Queixas2.html"><span class="material-icons">assignment</span> MOTIVO DO ATENDIMENTO</a></li>
+                <li><a href="03.inicial2.html"><span class="material-icons">description</span> EXAME INICIAL</a></li>
+                <li><a href="04.Circulatorio2.html"><span class="material-icons">favorite_border</span> CIRCULATÓRIO</a></li>
+                <li class="ativo"><a href="05.Neuro2.html"><span class="material-icons">psychology</span> NEURO</a></li>
+                <li><a href="06.Evolucao2.html"><span class="material-icons">timeline</span> EVOLUÇÃO/CONSULTA</a></li>
+                <li><a href="07.Parametros2.html"><span class="material-icons">analytics</span> SINAIS VITAIS E PARÂMETROS EVOLUTIVOS</a></li>
+            </ul>
+            <div class="rodape-lateral">
+                <a href="../Projeto_PAI_Main/Inicial.html"><span class="material-icons">arrow_back</span></a>
+            </div>
+        </nav>
 
-<body>
-    <nav class="sidebar">
-        <a href="00.Queixas2.html" class="sidebar-item"><img src="imgs/queixas.png" alt="Exame Inicial"></a>
-        <a href="01.inicial2.html" class="sidebar-item"><img src="imgs/respiratorio.png" alt="Respiratório"></a>
-        <a href="02.Circulatorio2.html" class="sidebar-item"><img src="imgs/circulatorio.png" alt="Circulatório"></a>
-        <a href="03.Neuro2.html" class="sidebar-item active"><img src="imgs/neuro.png" alt="Neuro"></a>
-        <a href="04.Evolucao2.html" class="sidebar-item"><img src="imgs/evolucao.png" alt="Evolução"></a>
-        <a href="05.Parametros2.html" class="sidebar-item"><img src="imgs/parametros.png" alt="Parâmetros"></a>
-        <a href="index.html" class="sidebar-item"><img src="imgs/sair.png" alt="Login"></a>
-    </nav>
-
-    <div class="container">
-        <div class="header">
-            <img src="../Projeto_PAI_Main/imagens/pai_logo_formulario.png" class="pai-logo" alt="PAI Logo">
-        </div>
-
-        <div class="content">
-            <form>
-                <fieldset class="section">
-                    <legend>Neuro</legend>
-                    <div class="checkbox-group">
-                        <label><input type="checkbox" id="neuroNormal"> Normal</label>
-                        <label><input type="checkbox" id="neuroSonolencia"> Sonolência</label>
-                        <label><input type="checkbox" id="neuroObnubilacao"> Obnubilação</label>
-                        <label><input type="checkbox" id="neuroAgitacao"> Agitação</label>
-                        <label><input type="checkbox" id="neuroMidriase"> Midríase</label>
-                        <label><input type="checkbox" id="neuroPupilasMiose"> Pupilas Miose</label>
-                        <label><input type="checkbox" id="neuroComa"> Coma</label>
-                        <label><input type="checkbox" id="neuroConvulsao"> Convulsão</label>
-                        <label><input type="checkbox" id="neuroSDMeningea"> SD Meníngea</label>
-                        <label><input type="checkbox" id="neuroDeficitSensivel"> Déficit Sensível: <input type="text"></label>
-                        <label><input type="checkbox" id="neuroDeficitMotor"> Déficit Motor: <input type="text"></label>
+        <main class="conteudo-principal">
+            <header class="cabecalho-principal">
+                <div class="container-busca">
+                    <input type="text" placeholder="Pesquisar Paciente">
+                    <span class="material-icons icone-busca">search</span>
+                </div>
+                <div class="perfil-usuario">
+                    <img src="../Projeto_PAI_Main/imagens/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_5247852.jpg" alt="Avatar Plantonista" class="avatar-usuario">
+                    <div>
+                        <span>Plantonista</span>
+                        <strong>MARIA CLARA</strong>
                     </div>
-                </fieldset>
+                </div>
+            </header>
 
-                <fieldset class="section">
-                    <legend>Abertura Ocular</legend>
-                    <div class="checkbox-group">
-                        <label><input type="radio" name="aberturaOcular" id="abertEspont" value="Espontânea"> Espontânea (4)</label>
-                        <label><input type="radio" name="aberturaOcular" id="abertVoz" value="À voz"> À voz (3)</label>
-                        <label><input type="radio" name="aberturaOcular" id="abertDor" value="À dor"> À dor (2)</label>
-                        <label><input type="radio" name="aberturaOcular" id="abertNenhuma" value="Nenhuma"> Nenhuma (1)</label>
+            <div class="container-formulario">
+                <h2>NEUROLÓGICO</h2>
+                <form>
+                    <fieldset class="grupo-fieldset">
+                        <legend>Nível</legend>
+                        <div class="grupo-checkbox">
+                            <label class="item-checkbox"><input type="radio" name="nivel"> Normal</label>
+                            <label class="item-checkbox"><input type="radio" name="nivel"> Inibido/a</label>
+                            <label class="item-checkbox"><input type="radio" name="nivel"> Desinibido/a</label>
+                            <label class="item-checkbox"><input type="radio" name="nivel"> Apatia</label>
+                            <label class="item-checkbox"><input type="radio" name="nivel"> Ansioso</label>
+                            <label class="item-checkbox"><input type="radio" name="nivel"> Euforia/Hiper</label>
+                            <label class="item-checkbox"><input type="radio" name="nivel"> Outros</label>
+                            <label class="item-checkbox"><input type="radio" name="nivel"> Sonolento</label>
+                            <label class="item-checkbox"><input type="radio" name="nivel"> Estuporoso/a</label>
+                            <label class="item-checkbox"><input type="radio" name="nivel"> Delírio/Alucinação</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="grupo-fieldset">
+                        <legend>Abertura Ocular</legend>
+                        <div class="grupo-checkbox">
+                            <label class="item-checkbox"><input type="radio" name="abertura-ocular"> Espontânea</label>
+                            <label class="item-checkbox"><input type="radio" name="abertura-ocular"> A voz</label>
+                            <label class="item-checkbox"><input type="radio" name="abertura-ocular"> A dor</label>
+                            <label class="item-checkbox"><input type="radio" name="abertura-ocular"> Nenhuma</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="grupo-fieldset">
+                        <legend>Resposta Verbal</legend>
+                        <div class="grupo-checkbox">
+                            <label class="item-checkbox"><input type="radio" name="resposta-verbal"> Obedece Comandos</label>
+                            <label class="item-checkbox"><input type="radio" name="resposta-verbal"> Localizador da dor</label>
+                            <label class="item-checkbox"><input type="radio" name="resposta-verbal"> Retira membro</label>
+                            <label class="item-checkbox"><input type="radio" name="resposta-verbal"> Extensão Normal</label>
+                            <label class="item-checkbox"><input type="radio" name="resposta-verbal"> Nenhuma</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="grupo-fieldset">
+                        <legend>Resposta Motora</legend>
+                        <div class="grupo-checkbox">
+                            <label class="item-checkbox"><input type="radio" name="resposta-motora"> Orientado</label>
+                            <label class="item-checkbox"><input type="radio" name="resposta-motora"> Confuso</label>
+                            <label class="item-checkbox"><input type="radio" name="resposta-motora"> Palavras Inapropriadas</label>
+                            <label class="item-checkbox"><input type="radio" name="resposta-motora"> Sons Incompreensíveis</label>
+                            <label class="item-checkbox"><input type="radio" name="resposta-motora"> Nenhuma</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="acoes-formulario">
+                        <button type="submit" class="botao-avancar">AVANÇAR</button>
                     </div>
-                </fieldset>
-
-                <fieldset class="section">
-                    <legend>Resposta Verbal</legend>
-                    <div class="checkbox-group">
-                        <label><input type="radio" name="respostaVerbal" id="respostaOrientada" value="Orientada (5)"> Orientada (5)</label>
-                        <label><input type="radio" name="respostaVerbal" id="respostaConfusa" value="Confusa (4)"> Confusa (4)</label>
-                        <label><input type="radio" name="respostaVerbal" id="respostaPalavrasInap" value="Palavras Inapropriadas (3)"> Palavras Inapropriadas (3)</label>
-                        <label><input type="radio" name="respostaVerbal" id="respostaPalavrasInco" value="Palavras Incompreensíveis (2)"> Palavras Incompreensíveis (2)</label>
-                        <label><input type="radio" name="respostaVerbal" id="respostaOcularNenhuma" value="Nenhuma(1)"> Nenhuma (1)</label>
-                    </div>
-                </fieldset>
-
-                <fieldset class="section">
-                    <legend>Resposta Ocular</legend>
-                    <div class="checkbox-group">
-                        <label><input type="radio" name="respostaOcular" id="respostaObedeceComandos" value="Obedece Comandos (6)"> Obedece Comandos (6)</label>
-                        <label><input type="radio" name="respostaOcular" id="respostaLocalizaDor" value="Localiza Dor (5)"> Localiza Dor (5)</label>
-                        <label><input type="radio" name="respostaOcular" id="respostaMovRetirada" value="Movimento de Retirada (4)"> Movimento de Retirada (4)</label>
-                        <label><input type="radio" name="respostaOcular" id="respostaFlexaoAnormal" value="Flexão Anormal (3)"> Flexão Anormal (3)</label>
-                        <label><input type="radio" name="respostaOcular" id="respostaExtensaoNormal" value="Extensão Normal (2)"> Extensão Normal (2)</label>
-                        <label><input type="radio" name="respostaOcular" id="respostaOcularNenhuma" value="Nenhuma (1)"> Nenhuma (1)</label>
-                    </div>
-                </fieldset>
-            </form>
-
-        <div class="buttons">
-            <a href="02.Circulatorio2.html"><button>Anterior</button></a>
-            <a href="04.Evolucao2.html"><button>Próximo</button></a>
-        </div>
+                </form>
+            </div>
+        </main>
     </div>
-<script src="js/realce.js"></script>
 </body>
 </html>
